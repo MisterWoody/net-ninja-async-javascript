@@ -10,4 +10,5 @@ window.onload = function () {
 
     http.open("GET", "data/tweets.json", true);
     http.send();
+    console.log("test");
 };
