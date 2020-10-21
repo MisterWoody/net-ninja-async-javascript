@@ -1,5 +1,18 @@
 window.onload = function () {
 
+    // JQuery equivalent
+    $.get("data/tweets.json").then(function (tweets) {
+        console.log(tweets);
+        return $.get("data/friends.json");
+    }).then(function (friends) {
+        console.log(friends);
+        return $.get("data/videos.json");
+    }).then(function (videos) {
+        console.log(videos);
+    })
+
+
+    /*
     function get(url) {
         return new Promise(function (resolve, reject) {
             var xhttp = new XMLHttpRequest();
@@ -32,5 +45,5 @@ window.onload = function () {
     }).catch(function (error) {
         console.log(error);
     });
-
+    */
 };
