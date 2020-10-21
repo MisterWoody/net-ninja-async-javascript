@@ -1,8 +1,9 @@
 window.onload = function () {
 
-    // jquery method
-    $.get("data/tweets.json", function (data) {
-        console.log(data);
+    var fruits = ["banana", "apple", "pear"];
+
+    fruits.forEach(function (fruit) {
+        console.log(fruit);
     });
-    console.log("test");
+
 };
