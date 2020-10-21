@@ -1,9 +1,10 @@
 window.onload = function () {
 
-    var fruits = ["banana", "apple", "pear"];
-
-    fruits.forEach(function (fruit) {
+    function callback(fruit) {
         console.log(fruit);
-    });
+    };
+
+    var fruits = ["banana", "apple", "pear"];
+    fruits.forEach(callback);
 
 };
