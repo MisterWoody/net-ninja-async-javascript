@@ -1,5 +1,9 @@
 window.onload = function () {
 
+    function handleError(jqXHR, textStatus, error) {
+        console.log(error);
+    }
+
     $.ajax({
         type: "GET",
         url: "data/tweets.json",
@@ -16,18 +20,12 @@ window.onload = function () {
                         success: function (data) {
                             console.log(data);
                         },
-                        error: function (jqXHR, textStatus, error) {
-                            console.log(error);
-                        }
+                        error: handleError
                     });
                 },
-                error: function (jqXHR, textStatus, error) {
-                    console.log(error);
-                }
+                error: handleError
             });
         },
-        error: function (jqXHR, textStatus, error) {
-            console.log(error);
-        }
+        error: handleError
     });
 };
