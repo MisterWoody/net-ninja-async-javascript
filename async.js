@@ -9,7 +9,7 @@ window.onload = function () {
         return $.get("data/videos.json");
     }).then(function (videos) {
         console.log(videos);
-    })
+    });
 
 
     /*
