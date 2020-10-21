@@ -1,6 +1,6 @@
 window.onload = function () {
 
-    function callback(fruit) {
+    var callback = function (fruit) {
         console.log(fruit);
     };
 
