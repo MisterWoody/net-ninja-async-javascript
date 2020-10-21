@@ -6,5 +6,6 @@ window.onload = function () {
 
     var myGen = gen();
     console.log(myGen.next());
+    console.log(myGen.next());
 
 };
