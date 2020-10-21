@@ -18,4 +18,10 @@ window.onload = function () {
             xhttp.send();
         });
     }
+
+    var promise = get("data/tweets.json");
+    promise.then(function (tweets) {
+        console.log(tweets);
+    });
+
 };
