@@ -22,6 +22,8 @@ window.onload = function () {
     var promise = get("data/tweets.json");
     promise.then(function (tweets) {
         console.log(tweets);
+    }).catch(function (error) {
+        console.log(error);
     });
 
 };
