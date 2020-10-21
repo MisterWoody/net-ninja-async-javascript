@@ -7,4 +7,5 @@ window.onload = function () {
     var fruits = ["banana", "apple", "pear"];
     fruits.forEach(callback);
 
+    console.log("done");
 };
